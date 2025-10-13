@@ -5,12 +5,12 @@ A simple multiplayer game template using Godot and Steam networking. This projec
 ## Setup
 
 ### Requirements:
-1. **Godot Engine** (v4.1 / 4.2 / 4.3)
+1. **Godot Engine** (v4.4.1)
 2. **Steam**
 
 ### Steps:   
 1. **Ensure Steam is Running**:
-   - Steam must be running to use Steam features like lobbies and P2P networking.
+   - Steam must be running to use Steam features like lobbies and P2P networking. [Make sure to run in Compatibility mode if you want the Steam Overlay to work when running through the editor.](https://godotsteam.com/issues/common_issues/#steam-overlay)
 
 2. **Set Your Steam AppID**:
    - In the `global.gd` script, set your **Steam AppID** to `480` for testing purposes. You can replace it later with your actual AppID when ready to publish.
@@ -24,7 +24,6 @@ A simple multiplayer game template using Godot and Steam networking. This projec
 - **Real-Time Player Movement Synchronization**: Player positions are synced between clients.
 - **In-Game Chat**: Chat functionality for communication between players.
 - **P2P Networking via Steam**: Peer-to-peer networking for real-time multiplayer gameplay.
-
 ## How to Play
 
 ### Host a Game:
@@ -48,7 +47,7 @@ A simple multiplayer game template using Godot and Steam networking. This projec
 
 ## Dependencies
 
-- **Godot Engine** (v4.1 / 4.2 / 4.3)
+- **Godot Engine** (v4.4.1)
 - **GodotSteam GDExtension** (compatible with your Godot version)
 - **Steam SDK**: Required for Steam integration.
   
