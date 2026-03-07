@@ -14,7 +14,10 @@ func _ready() -> void:
 	Steam.lobby_created.connect(_on_lobby_created)
 	Steam.lobby_joined.connect(_on_lobby_joined)
 	Steam.p2p_session_request.connect(_on_p2p_session_request)
+	Steam.join_requested.connect(_on_steam_join_requested)
 
+func _on_steam_join_requested(this_lobby_id: int, _friend_id: int) -> void:
+	join_lobby(this_lobby_id)
 
 func _process(_delta: float) -> void:
 	if lobby_id > 0:

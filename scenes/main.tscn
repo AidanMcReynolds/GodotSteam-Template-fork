@@ -1,4 +1,4 @@
-[gd_scene load_steps=3 format=3 uid="uid://d0qwk45r840ft"]
+[gd_scene format=3 uid="uid://d0qwk45r840ft"]
 
 [ext_resource type="Script" uid="uid://dgc20drm2ei6j" path="res://scripts/main.gd" id="1_2n46i"]
 
@@ -7,7 +7,7 @@ bg_color = Color(0.133333, 0.133333, 0.133333, 1)
 corner_radius_top_left = 5
 corner_radius_top_right = 5
 
-[node name="Main" type="Control"]
+[node name="Main" type="Control" unique_id=1579490981]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -16,7 +16,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_2n46i")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="."]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=1790067708]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -24,7 +24,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer" unique_id=205392002]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/margin_left = 10
@@ -32,36 +32,36 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer" unique_id=1657803885]
 layout_mode = 2
 theme_override_constants/separation = 10
 
-[node name="HostButton" type="Button" parent="HBoxContainer/MarginContainer/VBoxContainer"]
+[node name="HostButton" type="Button" parent="HBoxContainer/MarginContainer/VBoxContainer" unique_id=1060252259]
 layout_mode = 2
 focus_mode = 1
 text = "Host"
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer/VBoxContainer" unique_id=2074495001]
 layout_mode = 2
 
-[node name="LobbyID" type="LineEdit" parent="HBoxContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+[node name="LobbyID" type="LineEdit" parent="HBoxContainer/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1483116984]
 layout_mode = 2
 focus_mode = 1
 placeholder_text = "Lobby ID"
 
-[node name="JoinButton" type="Button" parent="HBoxContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+[node name="JoinButton" type="Button" parent="HBoxContainer/MarginContainer/VBoxContainer/VBoxContainer" unique_id=1695570831]
 layout_mode = 2
 focus_mode = 1
 text = "Join"
 
-[node name="PlayerContainer" type="PanelContainer" parent="HBoxContainer/MarginContainer/VBoxContainer"]
+[node name="PlayerContainer" type="PanelContainer" parent="HBoxContainer/MarginContainer/VBoxContainer" unique_id=369554030]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/PlayerContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/PlayerContainer" unique_id=1571323462]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="HBoxContainer/MarginContainer/VBoxContainer/PlayerContainer/VBoxContainer"]
+[node name="Label" type="Label" parent="HBoxContainer/MarginContainer/VBoxContainer/PlayerContainer/VBoxContainer" unique_id=892837291]
 layout_mode = 2
 focus_mode = 1
 theme_override_styles/normal = SubResource("StyleBoxFlat_glfqi")
@@ -69,45 +69,45 @@ text = "players:"
 horizontal_alignment = 1
 uppercase = true
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/PlayerContainer/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/PlayerContainer/VBoxContainer" unique_id=1142111427]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_constants/margin_left = 5
 theme_override_constants/margin_right = 5
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/PlayerContainer/VBoxContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/PlayerContainer/VBoxContainer/MarginContainer" unique_id=47488633]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="ChatContainer" type="PanelContainer" parent="HBoxContainer/MarginContainer/VBoxContainer"]
+[node name="ChatContainer" type="PanelContainer" parent="HBoxContainer/MarginContainer/VBoxContainer" unique_id=708554953]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/ChatContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/ChatContainer" unique_id=1897366458]
 layout_mode = 2
 
-[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/ChatContainer/VBoxContainer"]
+[node name="ScrollContainer" type="ScrollContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/ChatContainer/VBoxContainer" unique_id=831486844]
 layout_mode = 2
 size_flags_vertical = 3
 
-[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/ChatContainer/VBoxContainer/ScrollContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/ChatContainer/VBoxContainer/ScrollContainer" unique_id=960120101]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme_override_constants/margin_left = 5
 theme_override_constants/margin_right = 5
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/ChatContainer/VBoxContainer/ScrollContainer/MarginContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/MarginContainer/VBoxContainer/ChatContainer/VBoxContainer/ScrollContainer/MarginContainer" unique_id=597614829]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 
-[node name="LineEdit" type="LineEdit" parent="HBoxContainer/MarginContainer/VBoxContainer/ChatContainer/VBoxContainer"]
+[node name="LineEdit" type="LineEdit" parent="HBoxContainer/MarginContainer/VBoxContainer/ChatContainer/VBoxContainer" unique_id=843314967]
 layout_mode = 2
 focus_mode = 1
 placeholder_text = "Send your message"
 
-[node name="Playground" type="MarginContainer" parent="HBoxContainer"]
+[node name="Playground" type="MarginContainer" parent="HBoxContainer" unique_id=1967356343]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 3.0
